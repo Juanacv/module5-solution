@@ -14,6 +14,7 @@
           signUpCtrl.result = "No such menu number exist";
         }
         else {
+          signUpCtrl.myInfo.favoriteDish = signUpCtrl.myInfo.favoriteDish.toUpperCase();
           signUpCtrl.myInfo.title = response.name;
           signUpCtrl.myInfo.description = response.description;
           signUpCtrl.result = "Your information has been saved";
