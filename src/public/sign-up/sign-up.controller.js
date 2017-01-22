@@ -9,7 +9,7 @@
     var signUpCtrl = this;
     signUpCtrl.result = "";
     signUpCtrl.submit = function() {
-      MenuService.getDish(signUpCtrl.myInfo.favoriteDish).then(function(response) {
+      MenuService.getDish(signUpCtrl.myInfo.favoriteDish.toUpperCase()).then(function(response) {
         if (response === false) {
           signUpCtrl.result = "No such menu number exist";
         }
